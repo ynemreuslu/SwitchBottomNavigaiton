@@ -13,4 +13,10 @@
     <string name="kindness_screen">Kindness Screen</string>
     <string name="optimism_screen">Optimism Screen</string>
     <string name="respect_screen">Respect Screen</string>
+    <string name="happiness_is">Happiness is celebrating the small things every day</string>
+    <string name="true_wealth_is">True wealth is measured by how much we can give to others.</string>
+    <string name="happiness_is_not">Happiness is not something ready made. It comes from your own actions.</string>
+    <string name="kindness_is">Kindness is a language which the deaf can hear and the blind can see.</string>
+    <string name="optimism_is">Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.</string>
+    <string name="respect_is_not">Respect is not something that you can command; it is earned by how you act and the way you treat others.</string>
 </resources>

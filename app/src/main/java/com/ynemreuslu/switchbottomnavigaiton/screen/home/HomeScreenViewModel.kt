@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModel
 
 class HomeScreenViewModel : ViewModel() {
 
-
     private val _switchStates = MutableLiveData<MutableMap<Int, Boolean>>()
     val switchStates: LiveData<MutableMap<Int, Boolean>> get() = _switchStates
 
