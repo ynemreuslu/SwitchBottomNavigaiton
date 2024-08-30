@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.ynemreuslu.switchbottomnavigaiton.screen.home.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+    </fragment>
+    <fragment
+        android:id="@+id/happinessScreen"
+        android:name="com.ynemreuslu.switchbottomnavigaiton.screen.happiness.HappinessScreen"
+        android:label="fragment_happiness_screen"
+        tools:layout="@layout/fragment_happiness_screen" />
+    <fragment
+        android:id="@+id/optimismScreen"
+        android:name="com.ynemreuslu.switchbottomnavigaiton.screen.optimism.OptimismScreen"
+        android:label="fragment_optimism_screen"
+        tools:layout="@layout/fragment_optimism_screen" />
+    <fragment
+        android:id="@+id/kindnessScreen"
+        android:name="com.ynemreuslu.switchbottomnavigaiton.screen.kindness.KindnessScreen"
+        android:label="fragment_kindness_screen"
+        tools:layout="@layout/fragment_kindness_screen" />
+    <fragment
+        android:id="@+id/givingScreen"
+        android:name="com.ynemreuslu.switchbottomnavigaiton.screen.giving.GivingScreen"
+        android:label="fragment_giving_screen"
+        tools:layout="@layout/fragment_giving_screen" />
+    <fragment
+        android:id="@+id/respectScreen"
+        android:name="com.ynemreuslu.switchbottomnavigaiton.screen.respect.RespectScreen"
+        android:label="fragment_respect_screen"
+        tools:layout="@layout/fragment_respect_screen" />
+</navigation>
