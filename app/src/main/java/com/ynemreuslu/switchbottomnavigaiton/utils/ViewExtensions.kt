@@ -15,7 +15,7 @@ fun Context.showToast(message: String, duration: Int = Toast.LENGTH_SHORT) {
     Toast.makeText(this, message, duration).show()
 }
 
-inline fun View.snack(message: String, length: Int = Snackbar.LENGTH_LONG) {
+ fun View.snack(message: String, length: Int = Snackbar.LENGTH_LONG) {
     val snack = Snackbar.make(this, message, length)
     snack.show()
 }

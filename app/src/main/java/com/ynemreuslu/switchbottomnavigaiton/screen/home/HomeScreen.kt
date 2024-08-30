@@ -12,7 +12,12 @@ import com.google.android.material.snackbar.Snackbar
 import com.ynemreuslu.switchbottomnavigaiton.utils.MenuManager
 import com.ynemreuslu.switchbottomnavigaiton.R
 import com.ynemreuslu.switchbottomnavigaiton.databinding.FragmentHomeScreenBinding
+import com.ynemreuslu.switchbottomnavigaiton.utils.Constants.TIMEOUT_DURATION
 import com.ynemreuslu.switchbottomnavigaiton.utils.snack
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 
 class HomeScreen : Fragment() {
@@ -105,7 +110,8 @@ class HomeScreen : Fragment() {
                     viewModel.addSwitch(id)
                 } else {
                     showMaxItemsExceededMessage()
-                    setSwitchChecked(id, false)
+//                    setSwitchChecked(id)
+
                 }
             }
         } else {
@@ -120,15 +126,41 @@ class HomeScreen : Fragment() {
         }
     }
 
-    private fun setSwitchChecked(id: Int, isChecked: Boolean) {
-        when (id) {
-            R.id.happinessScreen -> binding.switchHappiness.isChecked = isChecked
-            R.id.givingScreen -> binding.switchGiving.isChecked = isChecked
-            R.id.respectScreen -> binding.switchRespect.isChecked = isChecked
-            R.id.kindnessScreen -> binding.switchKindness.isChecked = isChecked
-            R.id.optimismScreen -> binding.switchOptimism.isChecked = isChecked
-        }
-    }
+//    private fun setSwitchChecked(id: Int) {
+//        CoroutineScope(Dispatchers.Main).launch {
+//            when (id) {
+//                R.id.happinessScreen -> {
+//                    binding.switchHappiness.isChecked = true
+//                    delay(timeMillis = TIMEOUT_DURATION)
+//                    binding.switchHappiness.isChecked = false
+//                }
+//
+//                R.id.givingScreen -> {
+//                    binding.switchGiving.isChecked = true
+//                    delay(TIMEOUT_DURATION)
+//                    binding.switchGiving.isChecked = false
+//                }
+//
+//                R.id.respectScreen -> {
+//                    binding.switchRespect.isChecked = true
+//                    delay(TIMEOUT_DURATION)
+//                    binding.switchRespect.isChecked = false
+//                }
+//
+//                R.id.kindnessScreen -> {
+//                    binding.switchKindness.isChecked = true
+//                    delay(TIMEOUT_DURATION)
+//                    binding.switchKindness.isChecked = false
+//                }
+//
+//                R.id.optimismScreen -> {
+//                    binding.switchOptimism.isChecked = true
+//                    delay(TIMEOUT_DURATION)
+//                    binding.switchOptimism.isChecked = false
+//                }
+//            }
+//        }
+//    }
 
     private fun configureEgoSwitch() {
         binding.switchEgo.setOnCheckedChangeListener { _, isChecked ->
