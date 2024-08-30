@@ -8,6 +8,8 @@ This project showcases an Android application where Bottom Navigation items are 
 This project is designed to enhance your Android development skills and to improve your proficiency in managing dynamic Bottom Navigation items.
 
 # Screens
-https://github.com/user-attachments/assets/bd134cc1-09e8-45e1-be31-5961abf50fb0
+https://github.com/user-attachments/assets/d8b69fe2-0817-4809-b02b-be99f4646c6b
+
+
 
 
