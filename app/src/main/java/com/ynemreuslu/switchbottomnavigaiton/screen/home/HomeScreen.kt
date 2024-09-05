@@ -9,10 +9,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.snackbar.Snackbar
-import com.ynemreuslu.switchbottomnavigaiton.utils.MenuManager
 import com.ynemreuslu.switchbottomnavigaiton.R
 import com.ynemreuslu.switchbottomnavigaiton.databinding.FragmentHomeScreenBinding
 import com.ynemreuslu.switchbottomnavigaiton.utils.Constants.TIMEOUT_DURATION
+import com.ynemreuslu.switchbottomnavigaiton.utils.MenuManager
 import com.ynemreuslu.switchbottomnavigaiton.utils.snack
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -177,10 +177,11 @@ class HomeScreen : Fragment() {
     }
 
     private fun setSwitchesEnabled(isEnabled: Boolean) {
-           binding.switchOptimism.isClickable = isEnabled
-           binding.switchGiving.isClickable = isEnabled
-           binding.switchKindness.isClickable = isEnabled
-           binding.switchRespect.isClickable = isEnabled
+        binding.switchHappiness.isClickable = isEnabled
+        binding.switchOptimism.isClickable = isEnabled
+        binding.switchGiving.isClickable = isEnabled
+        binding.switchKindness.isClickable = isEnabled
+        binding.switchRespect.isClickable = isEnabled
     }
 
     private fun resetSwitches() {

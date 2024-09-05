@@ -65,4 +65,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.activity.compose)
     implementation(libs.lottie.compose)
+
+    //Splashscreen
+    implementation(libs.androidx.core.splashscreen)
 }
