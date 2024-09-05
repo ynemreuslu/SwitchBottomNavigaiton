@@ -3,6 +3,8 @@ package com.ynemreuslu.switchbottomnavigaiton.screen.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.launch
 
 class HomeScreenViewModel : ViewModel() {
 
@@ -15,6 +17,16 @@ class HomeScreenViewModel : ViewModel() {
     init {
         _switchStates.value = mutableMapOf()
         _egoSwitchState.value = true
+    }
+
+
+    fun switchState(id: Int, isChecked: Boolean) {
+        viewModelScope.launch {
+            if (_egoSwitchState.value == true) {
+                _switchStates.value?.set(id, true)
+            }
+        }
+
     }
 
     fun setEgoSwitchState(isChecked: Boolean) {

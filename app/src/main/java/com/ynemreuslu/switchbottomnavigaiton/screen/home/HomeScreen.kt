@@ -177,11 +177,10 @@ class HomeScreen : Fragment() {
     }
 
     private fun setSwitchesEnabled(isEnabled: Boolean) {
-        binding.switchHappiness.isClickable = isEnabled
-        binding.switchOptimism.isClickable = isEnabled
-        binding.switchGiving.isClickable = isEnabled
-        binding.switchKindness.isClickable = isEnabled
-        binding.switchRespect.isClickable = isEnabled
+           binding.switchOptimism.isClickable = isEnabled
+           binding.switchGiving.isClickable = isEnabled
+           binding.switchKindness.isClickable = isEnabled
+           binding.switchRespect.isClickable = isEnabled
     }
 
     private fun resetSwitches() {
