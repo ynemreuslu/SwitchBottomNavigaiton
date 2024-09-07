@@ -7,10 +7,14 @@ This project showcases an Android application where Bottom Navigation items are 
 - **Data Management**: 🗄️ Switch states are managed using ViewModel, ensuring that data is preserved across configuration changes.
 -  **Lootie**: 🎉 The application includes Lootie integration to enhance the user experience.
 -  **UI Testing**: 🧪 UI tests ensure the functionality and user experience of the application. Tests are conducted comprehensively to verify that the Bottom Navigation and switch interactions work correctly.
+-  **Splash Screen**: 🖼️ The application features a splash screen to provide an engaging initial experience as the app loads.
+-  **Compose Fragment Screen**: 🧩 A fragment screen has been developed using Compose, incorporating modern UI design techniques.
 This project is designed to enhance your Android development skills and improve your proficiency in managing dynamic Bottom Navigation items.
 
 # Screens
-https://github.com/user-attachments/assets/d8b69fe2-0817-4809-b02b-be99f4646c6b
+https://github.com/user-attachments/assets/29e631a4-ecbd-4760-8231-de6b10216330
+
+
 
 
 
