@@ -39,7 +39,7 @@ class HomeScreen : Fragment() {
 
         val bottomNav =
             requireActivity().findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        menuManager = MenuManager(bottomNav)
+             menuManager = MenuManager(bottomNav)
 
 
         viewModel.switchStates.observe(viewLifecycleOwner) { states ->
@@ -55,7 +55,7 @@ class HomeScreen : Fragment() {
     }
 
 
-    private fun setupSwitchListeners() {
+     fun setupSwitchListeners() {
         binding.switchHappiness.setOnCheckedChangeListener { _, isChecked ->
             handleMenuItem(
                 isChecked,

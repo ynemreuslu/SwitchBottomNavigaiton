@@ -48,6 +48,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.ui.android)
+    implementation(libs.androidx.espresso.contrib)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -55,6 +56,9 @@ dependencies {
     // Navigation
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    androidTestImplementation(libs.androidx.navigation.testing)
+    androidTestImplementation (libs.androidx.fragment.testing)
+    debugImplementation(libs.androidx.fragment.testing.manifest)
 
     // Lottie
     implementation(libs.lottie)
@@ -68,4 +72,7 @@ dependencies {
 
     //Splashscreen
     implementation(libs.androidx.core.splashscreen)
+
+
+
 }
